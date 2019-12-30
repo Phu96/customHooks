@@ -1,18 +1,16 @@
 {
-  "name": "@phu96/customhooks",
+  "name": "customhooks",
   "version": "0.0.1",
   "description": "phu96's personal library of custom React hooks",
-  "main": "index.js",
-  "repository": "https://github.com/Phu96/customHooks",
+  "main": "src/index.js",
+  "repository": "git://github.com/Phu96/customHooks",
   "author": "Tran Phu <viscafcb96@gmail.com>",
   "license": "MIT",
-  "scripts": {
-    "postpublish": "npm publish pkg --ignore-scripts --@Phu96:registry='https://registry.npmjs.org'"
-  },
   "publishConfig": {
-    "access": "public"
+    "registry": "https://npm.pkg.github.com/"
   },
   "dependencies": {
+    "@phu96/customhooks": "git+https://git@github.com/Phu96/customHooks.git#master",
     "deepmerge": "^4.2.2"
   },
   "devDependencies": {
